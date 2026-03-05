@@ -13,6 +13,7 @@ namespace MusicPlayer
         public string Title { get; set; }
         public string Artist { get; set; }
         public string Length { get; set; }
+        public string AudioUrl { get; set; }
     }
 }
 

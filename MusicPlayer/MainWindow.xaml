@@ -69,7 +69,7 @@
                 </ListView.View>
             </ListView>
         </Grid>
-        
+
         <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,10,0" x:Name="PlaylistsView" Visibility="Collapsed">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -146,7 +146,7 @@
                 <Button Width="40" Height="40" Background="Transparent" BorderThickness="0" Cursor="Hand" Margin="0,0,10,0">
                     <TextBlock Text="⏮" FontSize="24" Foreground="#333333"/>
                 </Button>
-                
+
                 <Button x:Name="btnPlayStop" Width="50" Height="50" Background="Transparent" BorderThickness="0" 
                 Cursor="Hand" Margin="0,0,10,0" Click="btnPlayStop_Click">
                     <TextBlock x:Name="PlayStopIcon" Text="▶" FontSize="35" Foreground="Gray"/>
@@ -160,5 +160,6 @@
 
             <Button Grid.Column="2" Content="Shuffle" Padding="15,8"  Foreground="White" Cursor="Hand"/>
         </Grid>
+        <MediaElement x:Name="mediaPlayer" Source="" LoadedBehavior="Manual" UnloadedBehavior="Stop" />
     </Grid>
 </Window>

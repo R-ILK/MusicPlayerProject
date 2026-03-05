@@ -68,6 +68,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Migrations\202603051828499_InitialCreate.cs" />
+    <Compile Include="Migrations\202603051828499_InitialCreate.Designer.cs">
+      <DependentUpon>202603051828499_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202603051907350_AddAudioUrl.cs" />
+    <Compile Include="Migrations\202603051907350_AddAudioUrl.Designer.cs">
+      <DependentUpon>202603051907350_AddAudioUrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Track.cs" />
     <Compile Include="TrackData.cs" />
     <Page Include="MainWindow.xaml">
@@ -97,6 +106,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\202603051828499_InitialCreate.resx">
+      <DependentUpon>202603051828499_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202603051907350_AddAudioUrl.resx">
+      <DependentUpon>202603051907350_AddAudioUrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

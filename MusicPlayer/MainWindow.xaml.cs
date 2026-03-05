@@ -87,7 +87,8 @@ namespace MusicPlayer
                         Cover = item["image"]?.ToString() ?? "",
                         Title = item["name"]?.ToString() ?? "Unknown",
                         Artist = item["artist_name"]?.ToString() ?? "Unknown",
-                        Length = length
+                        Length = length,
+                        AudioUrl = item["audio"]?.ToString() ?? ""
                     };
 
                     db.Tracks.Add(track);
